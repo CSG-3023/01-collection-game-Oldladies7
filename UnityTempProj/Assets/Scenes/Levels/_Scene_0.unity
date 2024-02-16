@@ -393,6 +393,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5902025188519310072, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
         type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 6787256520386842961, guid: f710a920bf518654ab0e053fbb124c36,
+        type: 3}
+    - target: {fileID: -5902025188519310072, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
+        type: 3}
       propertyPath: leftAndRightEdge
       value: 20
       objectReference: {fileID: 0}
@@ -400,6 +406,11 @@ PrefabInstance:
         type: 3}
       propertyPath: chanceToChangeDirections
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902025188519310072, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
+        type: 3}
+      propertyPath: secondsBetweenAppleDrops
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3065430705983623031, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
         type: 3}
@@ -450,6 +461,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582050329466732599, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582050329466732599, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5892718319060710663, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
         type: 3}
