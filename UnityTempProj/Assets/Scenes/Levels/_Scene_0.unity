@@ -388,8 +388,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5902025188519310072, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
         type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902025188519310072, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
+        type: 3}
       propertyPath: leftAndRightEdge
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -5902025188519310072, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
+        type: 3}
+      propertyPath: chanceToChangeDirections
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 3065430705983623031, guid: 9177d6d25d0d6164ba8a7cf16b89a5a5,
         type: 3}
