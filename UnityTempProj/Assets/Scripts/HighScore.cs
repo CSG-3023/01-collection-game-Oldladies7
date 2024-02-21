@@ -1,3 +1,8 @@
+/***** Created by: Leslie Graff
+ * * Date Created: Feb 16, 2024**
+ * Last Edited by:* 
+ * Last Edited:
+ * ** Description: Highscore script.****/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
