@@ -1,6 +1,6 @@
 /***** Created by: Leslie Graff
  * * Date Created: Feb 16, 2024**
- * Last Edited by:* 
+ * Last Edited by: Leslie Graff
  * Last Edited:
  * ** Description: Highscore script.****/
 using System.Collections;

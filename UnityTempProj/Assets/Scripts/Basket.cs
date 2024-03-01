@@ -1,29 +1,28 @@
 /***** Created by: Leslie Graff
  * * Date Created: Feb 16, 2024**
  * Last Edited by:* 
+ * 
  * Last Edited:
  * ** Description: Basket moving Script and adding points for each caught apple.****/
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Basket : MonoBehaviour
 
 {
-    [Header("Set Dynamically")]
-    public Text scoreGT;
 
-
+    GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
+        
+        gm = GameManager.GM;
         //Find a reference to the ScoreCounter GameObject
-        GameObject scoreGO = GameObject.Find("ScoreCounter");
-        //Get the text component of that GameObject
-        scoreGT = scoreGO.GetComponent<Text>();
-        //Set the starting number of points to zero
-        scoreGT.text = "0";
+   
     }
 
     // Update is called once per frame
@@ -53,18 +52,35 @@ public class Basket : MonoBehaviour
             Destroy (collidedWith);
 
             //Parse the text of the scoreGT into an int
-            int score = int.Parse(scoreGT.text);
-            //add pooints for catching the apple
-            score += 100;
+            int score = gm.Score;
+            //add points for catching the apple
+           score += 100;
+            gm.Score = score;
+            Debug.Log(score);
             //Convert the score back to a string and display it
-            scoreGT.text = score.ToString();
+         
 
             //track the high score
-            if (score> HighScore.score)
+            if (score> gm.HighScore)
             {
-                HighScore.score = score;
+               gm.HighScore = score;
+            
             }
+            if (score == 3500)
+            {
+                gm.BeatLevel();
+            }
+
         }
+
         
+    }
+
+
+
+    public void OnDestroy()
+    {
+        gm.LostLife();
+        Debug.Log("Lostlife");
     }
 }
